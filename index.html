@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooryajith & Sreelakshmi — Wedding Invitation</title>
+
+    <!-- Performance: Preconnect to external CDNs -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FontAwesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Google Fonts -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&display=swap">
+    </noscript>
+
+    <!-- Favicons & App Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO & Social Media Meta Tags -->
+    <meta name="description"
+        content="Join us in celebrating the wedding of Sooryajith & Sreelakshmi. View our wedding invitation, event details, and share your wishes.">
+    <meta name="keywords" content="Sooryajith, Sreelakshmi, Wedding Invitation, Wedding Website, Save The Date">
+    <meta name="author" content="Sooryajith & Sreelakshmi">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sooryajith-sreelakshmi-wedding.vercel.app/">
+    <meta property="og:title" content="Sooryajith & Sreelakshmi — Wedding Invitation">
+    <meta property="og:description"
+        content="With joyful hearts, we invite you to celebrate our wedding. Click to view our wedding invitation and details.">
+    <meta property="og:image"
+        content="https://sooryajith-sreelakshmi-wedding.vercel.app/assets/images/wedding-thumbnail.webp">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sooryajith & Sreelakshmi — Wedding Invitation">
+    <meta name="twitter:description"
+        content="With joyful hearts, we invite you to celebrate our wedding. Click to view our wedding invitation and details.">
+    <meta name="twitter:image"
+        content="https://sooryajith-sreelakshmi-wedding.vercel.app/assets/images/wedding-thumbnail.webp">
+</head>
+
+<body class="cover-active">
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="assets/audio/wedding-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="musicToggleBtn" class="music-toggle-btn" role="button" tabindex="0" aria-label="Toggle Music"
+        style="display: none;">
+        <div class="music-icon-wrap">
+            <div class="audio-bars">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING PETALS CONTAINER -->
+    <div class="petals-container" id="petals"></div>
+
+    <!-- COVER OVERLAY -->
+    <div id="cover">
+        <div class="glass-card">
+            <!-- Compact Wedding Corner Ornaments -->
+            <div class="glass-corner corner-tl">
+                <svg viewBox="0 0 40 40">
+                    <path d="M4,4 Q20,4 20,20 Q20,36 36,36 M4,12 Q12,12 12,4" fill="none" stroke="currentColor"
+                        stroke-width="1.2" stroke-linecap="round" />
+                    <circle cx="8" cy="8" r="1.5" fill="currentColor" />
+                </svg>
+            </div>
+            <div class="glass-corner corner-tr">
+                <svg viewBox="0 0 40 40">
+                    <path d="M36,4 Q20,4 20,20 Q20,36 4,36 M36,12 Q28,12 28,4" fill="none" stroke="currentColor"
+                        stroke-width="1.2" stroke-linecap="round" />
+                    <circle cx="32" cy="8" r="1.5" fill="currentColor" />
+                </svg>
+            </div>
+            <div class="glass-corner corner-bl">
+                <svg viewBox="0 0 40 40">
+                    <path d="M4,36 Q20,36 20,20 Q20,4 36,4 M4,28 Q12,28 12,36" fill="none" stroke="currentColor"
+                        stroke-width="1.2" stroke-linecap="round" />
+                    <circle cx="8" cy="32" r="1.5" fill="currentColor" />
+                </svg>
+            </div>
+            <div class="glass-corner corner-br">
+                <svg viewBox="0 0 40 40">
+                    <path d="M36,36 Q20,36 20,20 Q20,4 4,4 M36,28 Q28,28 28,36" fill="none" stroke="currentColor"
+                        stroke-width="1.2" stroke-linecap="round" />
+                    <circle cx="32" cy="32" r="1.5" fill="currentColor" />
+                </svg>
+            </div>
+
+            <div class="glass-inner">
+                <div class="royal-crest">
+                    <span>✦</span>
+                    <span>S &amp; S</span>
+                    <span>✦</span>
+                </div>
+
+                <div class="cover-sub-header">You Are Cordially Invited</div>
+
+                <h1 class="cover-names">
+                    Sooryajith
+                    <span class="romantic-amp">&amp;</span>
+                    Sreelakshmi
+                </h1>
+
+                <div class="ribbon-line">
+                    <span class="r-dot"></span>
+                    <span>24 · OCTOBER · 2026</span>
+                    <span class="r-dot"></span>
+                </div>
+
+                <button class="glass-open-btn" id="openBtn">
+                    <span>Open Invitation</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="section">
+        <h2 class="visually-hidden">Hero Welcome</h2>
+        <div class="eyebrow reveal">
+            <span class="eyebrow-line"></span>
+            With joyful hearts
+            <span class="eyebrow-line"></span>
+        </div>
+
+        <!-- Artistic Couple Portrait -->
+        <div class="hero-image-wrapper reveal">
+            <img src="assets/images/couple-photo.webp" alt="Couple Portrait" class="hero-couple-img" width="217"
+                height="217" fetchpriority="high">
+        </div>
+
+        <div class="hero-names-v2 reveal">
+            <span>Sooryajith</span>
+            <span class="script-and">&amp;</span>
+            <span>Sreelakshmi</span>
+        </div>
+
+        <div class="hero-sub reveal">
+            <div class="date-3d-wrapper">
+                <span class="date-3d-text">24 October 2026</span>
+                <span class="date-3d-shadow">24 October 2026</span>
+            </div>
+        </div>
+
+        <!-- Decorative Spacer Ornament to gracefully fill desktop height -->
+        <div class="hero-ornament-spacer reveal">
+            <span class="ornament-line"></span>
+            <span class="ornament-heart">♦</span>
+            <span class="ornament-line"></span>
+        </div>
+
+        <div class="scroll-hint reveal" role="button" tabindex="0" onclick="scrollToNextSection(this)"
+            aria-label="Scroll to next section">
+            <span>Scroll to Celebrate</span>
+            <span class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN SECTION -->
+    <section id="countdown-wrap" class="section">
+        <div class="countdown-bg-art">
+            <div class="sparkle s-1"></div>
+            <div class="sparkle s-2"></div>
+            <div class="sparkle s-3"></div>
+            <div class="sparkle s-4"></div>
+            <div class="sparkle s-5"></div>
+            <div class="sparkle s-6"></div>
+
+            <div class="animated-butterfly soulmate-b-1">
+                <svg viewBox="0 0 100 100">
+                    <path d="M50,50 C30,20 5,30 10,50 C15,70 40,70 50,50 C60,70 85,70 90,50 C95,30 70,20 50,50 Z"
+                        fill="var(--gold-primary)" opacity="0.6" />
+                </svg>
+            </div>
+            <div class="animated-butterfly soulmate-b-2">
+                <svg viewBox="0 0 100 100">
+                    <path d="M50,50 C30,20 5,30 10,50 C15,70 40,70 50,50 C60,70 85,70 90,50 C95,30 70,20 50,50 Z"
+                        fill="#f3c6c7" opacity="0.65" />
+                </svg>
+            </div>
+        </div>
+
+        <h2 class="visually-hidden">Countdown Timer</h2>
+        <div class="eyebrow reveal" id="section-eyebrow">THE COUNTDOWN</div>
+        <div class="countdown-label reveal" id="section-title">Our forever begins in</div>
+
+        <div class="countdown reveal" id="countdown">
+            <div class="cd-item-wrap">
+                <div class="cd-card flip-container">
+                    <div class="cd-card-inner">
+                        <div class="cd-card-front">
+                            <div class="cd-num" id="cd-days">00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-unit-label">Days</div>
+            </div>
+            <div class="cd-colon">:</div>
+            <div class="cd-item-wrap">
+                <div class="cd-card flip-container">
+                    <div class="cd-card-inner">
+                        <div class="cd-card-front">
+                            <div class="cd-num" id="cd-hours">00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-unit-label">Hours</div>
+            </div>
+            <div class="cd-colon">:</div>
+            <div class="cd-item-wrap">
+                <div class="cd-card flip-container">
+                    <div class="cd-card-inner">
+                        <div class="cd-card-front">
+                            <div class="cd-num" id="cd-mins">00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-unit-label">Minutes</div>
+            </div>
+            <div class="cd-colon">:</div>
+            <div class="cd-item-wrap">
+                <div class="cd-card flip-container">
+                    <div class="cd-card-inner">
+                        <div class="cd-card-front">
+                            <div class="cd-num" id="cd-secs">00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cd-unit-label">Seconds</div>
+            </div>
+        </div>
+
+        <!-- EXPIRED / WEDDING DAY MESSAGE -->
+        <div id="countdown-expired-message" class="reveal" style="display: none;">
+            <div style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;">
+                <span>✨</span>
+                <span style="text-align: center;">Today is our big day!<br class="mobile-break"> Our forever has
+                    begun.</span>
+                <span>✨</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAMILIES SECTION -->
+    <section id="families" class="section">
+        <div class="eyebrow reveal">In the Name of the Almighty</div>
+
+        <div class="divider reveal">
+            <svg viewBox="0 0 120 18">
+                <path d="M0,9 H45 M75,9 H120" />
+                <circle cx="60" cy="9" r="4" />
+            </svg>
+        </div>
+
+        <p class="families-intro reveal">
+            With hearts full of love, we cordially invite you to celebrate the beginning of our forever together.
+        </p>
+
+        <div class="arch-grid reveal">
+            <!-- BRIDE CARD -->
+            <div class="arch-card">
+                <!-- TOP ARCH CREST SVG -->
+                <div class="card-crest-svg">
+                    <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 22 C 30 5, 70 5, 90 22" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" />
+                        <path d="M25 22 C 38 12, 62 12, 75 22" stroke="currentColor" stroke-width="0.8"
+                            stroke-dasharray="2 2" />
+                        <circle cx="50" cy="9" r="2.5" fill="currentColor" />
+                        <circle cx="38" cy="12" r="1.5" fill="currentColor" />
+                        <circle cx="62" cy="12" r="1.5" fill="currentColor" />
+                    </svg>
+                </div>
+
+                <span class="fam-relation">Bride</span>
+                <h2 class="romantic-name">Sreelakshmi</h2>
+                <div class="fam-sub-tag">Daughter of</div>
+                <div class="fam-parents">
+                    <span class="parent-name">E. Somasundaran</span>
+                    <span class="amp-dot">&amp;</span>
+                    <span class="parent-name">C. Ramani Somasundaran</span>
+                </div>
+
+                <!-- BOTTOM BOTANICAL ACCENT SVG -->
+                <div class="card-bottom-svg">
+                    <svg viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10 H 45" stroke="currentColor" stroke-width="0.8" opacity="0.6" />
+                        <path d="M75 10 H 105" stroke="currentColor" stroke-width="0.8" opacity="0.6" />
+                        <path
+                            d="M48 10 C 52 4, 56 4, 60 10 C 64 4, 68 4, 72 10 C 68 16, 64 16, 60 10 C 56 16, 52 16, 48 10 Z"
+                            fill="currentColor" />
+                        <circle cx="60" cy="10" r="1.5" fill="var(--bg-deep)" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- CONNECTOR -->
+            <div class="romantic-connector">
+                <span class="connector-line"></span>
+                <div class="heart-badge"><i class="fa-solid fa-heart fa-beat"></i></div>
+                <span class="connector-line"></span>
+            </div>
+
+            <!-- GROOM CARD -->
+            <div class="arch-card">
+                <div class="card-crest-svg">
+                    <svg viewBox="0 0 100 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 22 C 30 5, 70 5, 90 22" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" />
+                        <path d="M25 22 C 38 12, 62 12, 75 22" stroke="currentColor" stroke-width="0.8"
+                            stroke-dasharray="2 2" />
+                        <circle cx="50" cy="9" r="2.5" fill="currentColor" />
+                        <circle cx="38" cy="12" r="1.5" fill="currentColor" />
+                        <circle cx="62" cy="12" r="1.5" fill="currentColor" />
+                    </svg>
+                </div>
+
+                <span class="fam-relation">Groom</span>
+                <h2 class="romantic-name">Sooryajith</h2>
+                <div class="fam-sub-tag">Son of</div>
+                <div class="fam-parents">
+                    <span class="parent-name">P. Suresh</span>
+                    <span class="amp-dot">&amp;</span>
+                    <span class="parent-name">P. P. Hema Suresh</span>
+                </div>
+
+                <!-- BOTTOM BOTANICAL ACCENT SVG -->
+                <div class="card-bottom-svg">
+                    <svg viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10 H 45" stroke="currentColor" stroke-width="0.8" opacity="0.6" />
+                        <path d="M75 10 H 105" stroke="currentColor" stroke-width="0.8" opacity="0.6" />
+                        <path
+                            d="M48 10 C 52 4, 56 4, 60 10 C 64 4, 68 4, 72 10 C 68 16, 64 16, 60 10 C 56 16, 52 16, 48 10 Z"
+                            fill="currentColor" />
+                        <circle cx="60" cy="10" r="1.5" fill="var(--bg-deep)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="section">
+        <div class="eyebrow reveal">Join Us</div>
+
+        <div class="divider reveal">
+            <svg viewBox="0 0 120 18">
+                <path d="M0,9 H45 M75,9 H120" />
+                <circle cx="60" cy="9" r="4" />
+            </svg>
+        </div>
+
+        <div class="events-wrapper reveal">
+
+            <!-- DATE BADGE -->
+            <div class="timeline-date-badge">
+                <i class="fa-regular fa-calendar-days"></i>
+                <span>Saturday · 24 October 2026</span>
+            </div>
+
+            <!-- THALIKETTU INFORMATION BANNER -->
+            <div class="thalikettu-info-banner">
+                <div class="t-banner-icon"><i class="fa-solid fa-om"></i></div>
+                <div class="t-banner-content">
+                    <h3 class="t-banner-title">Thalikettu Ceremony</h3>
+                    <div class="t-banner-details">
+                        <span class="detail-item"><i class="fa-regular fa-clock animated-clock"></i> 8:00 AM – 9:00
+                            AM</span>
+                        <span class="detail-separator">•</span>
+                        <span class="detail-item"><i class="fa-solid fa-location-dot"></i> Guruvayur Shri Krishna
+                            Temple</span>
+                        <span class="detail-separator">•</span>
+                        <span class="detail-item malayalam-date">(1202 തുലാം 7)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERO EVENT CARDS (WEDDING & RECEPTION) -->
+            <div class="events-grid main-events">
+
+                <!-- EVENT 1: WEDDING -->
+                <div class="event-card hero-event">
+                    <div class="event-badge">01</div>
+                    <div class="event-info">
+                        <h3 class="event-title">Wedding Ceremony</h3>
+                        <div class="event-time">
+                            <i class="fa-regular fa-clock animated-clock"></i> 11:00 AM – 2:00 PM
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a class="pill cal-btn" id="cal-wedding" href="#" target="_blank" rel="noopener">
+                            <i class="fa-regular fa-calendar-plus"></i> Add to Calendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- EVENT 2: RECEPTION -->
+                <div class="event-card hero-event">
+                    <div class="event-badge">02</div>
+                    <div class="event-info">
+                        <h3 class="event-title">Reception</h3>
+                        <div class="event-time">
+                            <i class="fa-regular fa-clock animated-clock"></i> 5:00 PM – 9:00 PM
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a class="pill cal-btn" id="cal-reception" href="#" target="_blank" rel="noopener">
+                            <i class="fa-regular fa-calendar-plus"></i> Add to Calendar
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CONNECTING FLOW LINE -->
+            <div class="venue-connector">
+                <span class="v-line"></span>
+                <div class="v-badge"><i class="fa-solid fa-location-dot animated-pin"></i></div>
+                <span class="v-line"></span>
+            </div>
+
+            <!-- VENUE FOOTER CARD & EMBEDDED MAP -->
+            <div class="venue-sub-card">
+                <div class="venue-info-inline">
+                    <div class="venue-text">
+                        <span class="venue-tag">VENUE FOR WEDDING & RECEPTION</span>
+                        <h3 class="venue-title">Enayat Convention Center</h3>
+                        <p class="venue-address">
+                            <i class="fa-solid fa-map-pin"></i> Arikkanchira, Tirur
+                        </p>
+                    </div>
+                    <a class="pill direction-btn" target="_blank" rel="noopener"
+                        href="https://maps.app.goo.gl/w6m9gTr7hmmw3VxJ6">
+                        <i class="fa-solid fa-directions"></i> Get Directions
+                    </a>
+                </div>
+
+                <!-- Embedded Map Container -->
+                <div class="venue-map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.9383221207318!2d75.891875075361!3d10.892292089263576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7afd606d70bd3%3A0xee412bd9a6bf393c!2sEnayat%20Convention%20Center!5e0!3m2!1sen!2sin!4v1786157036213!5m2!1sen!2sin"
+                        title="Enayat Convention Center Map" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ROMANTIC MESSAGE -->
+    <section class="section message-section">
+        <h4 class="visually-hidden">Wishes and Messages</h4>
+        <div class="footer-top-crest reveal">
+            <span class="crest-line"></span>
+            <span class="crest-symbol">✦</span>
+            <span class="crest-line"></span>
+        </div>
+
+        <p class="message-text reveal">
+            "Two hearts, one beautiful beginning.<br>
+            Your presence would make our celebration complete."
+        </p>
+
+        <div class="footer-top-crest reveal">
+            <span class="crest-line"></span>
+            <span class="crest-symbol">✦</span>
+            <span class="crest-line"></span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="romantic-footer">
+        <div class="footer-ring reveal">
+            <span class="footer-monogram">S &amp; S</span>
+        </div>
+
+        <div class="footer-divider reveal">
+            <span class="f-line"></span>
+            <i class="fa-solid fa-heart f-heart"></i>
+            <span class="f-line"></span>
+        </div>
+
+        <div class="footer-date reveal">24 · 10 · 2026</div>
+
+        <div class="footer-sign reveal">
+            <span class="sign-tag">With everlasting love,</span>
+            <span class="sign-names">Family &amp; Friends</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
